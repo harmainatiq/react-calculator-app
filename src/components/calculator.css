@@ -1,0 +1,96 @@
+.device {
+  border: 2px solid #191b28;
+  padding: 20px;
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+input[type="text"] {
+  color: #040018;
+  width: 91%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 2px solid #191b28;
+  height: 30px;
+  background-color: #81a75f;
+}
+
+.grp {
+  display: flex;
+  /* justify-content: space-between; */
+  /* margin-bottom: 10px; */
+}
+
+.my-button {
+  width: 70px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #dcdbe1;
+  border: none;
+  /* cursor: pointer; */
+  border: 1px solid #191b28;
+}
+
+.my-button:hover {
+  background-color: #5f5859;
+  color: aliceblue;
+}
+
+.blue-background {
+  background-color: #272936;
+}
+
+.brown-background {
+  background-color: #191b28;
+}
+
+.my-button1 {
+  width: 64px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #f34e02;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #040018;
+  /* margin-right: 50px; */
+
+}
+
+.my-button1:hover {
+  background-color: #f73809;
+  color: aliceblue;
+}
+
+.my-button2 {
+  width: 186px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #f34e02;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #040018;
+
+}
+
+.my-button2:hover {
+  background-color: #dd4c28e0;
+  color: aliceblue;
+}
+
+.my-button3 {
+  width: 70px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #fac16be0;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #040018;
+}
+
+.my-button3:hover {
+  background-color: #c76024;
+  color: aliceblue;
+}
