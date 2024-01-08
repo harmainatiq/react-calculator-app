@@ -50,37 +50,47 @@ const Calculator = () => {
     }
   };
 
+  const deleteLastDigit = () => {
+    if (isOn && input !== "0") {
+      buttonClickVoice.play();
+      setInput((prevInput) => prevInput.slice(0, -1));
+    }
+  };
+
   return (
     <div>
     <h1>Calculator React App</h1>
     <div className={`device ${isOn ? "blue-background" : "brown-background"}`}>
       <input type="text" placeholder="number" value={input} />
       <div className="grp">
+      <button className="my-button1" onClick={powerButton}>{isOn ? "On" : "Off"}</button>
+      <button className="my-button3" onClick={deleteLastDigit}>Del</button>
+      <button className="my-button3" onClick={resetCalculator}>AC</button>
+      <button className="my-button" onClick={() => numberhandler("+")}>+</button>
+      </div>
+      <div className="grp">
         <button className="my-button" onClick={() => numberhandler("7")}>7</button>
         <button className="my-button" onClick={() => numberhandler("8")}>8</button>
         <button className="my-button" onClick={() => numberhandler("9")}>9</button>
-        <button className="my-button" onClick={() => numberhandler("+")}>+</button>
+        <button className="my-button" onClick={() => numberhandler("-")}>-</button>
       </div>
       <div className="grp">
         <button className="my-button" onClick={() => numberhandler("4")}>4</button>
         <button className="my-button" onClick={() => numberhandler("5")}>5</button>
         <button className="my-button" onClick={() => numberhandler("6")}>6</button>
-        <button className="my-button" onClick={() => numberhandler("-")}>-</button>
+        <button className="my-button" onClick={() => numberhandler("*")}>*</button>
       </div>
       <div className="grp">
         <button className="my-button" onClick={() => numberhandler("1")}>1</button>
         <button className="my-button" onClick={() => numberhandler("2")}>2</button>
         <button className="my-button" onClick={() => numberhandler("3")}>3</button>
-        <button className="my-button" onClick={() => numberhandler("*")}>*</button>
+        <button className="my-button" onClick={() => numberhandler("/")}>/</button>
       </div>
       <div className="grp">
         <button className="my-button" onClick={() => numberhandler("0")}>0</button>
         <button className="my-button" onClick={() => numberhandler(".")}>.</button>
-        <button className="my-button" onClick={() => numberhandler("/")}>/</button>
-        <button className="my-button3" onClick={resetCalculator}>Reset</button>
+        <button className="my-button2" onClick={evaluateExpression}>=</button>
       </div>
-      <button className="my-button1" onClick={powerButton}>{isOn ? "On" : "Off"}</button>
-      <button className="my-button2" onClick={evaluateExpression}>=</button>
       </div>
     </div>
   );
